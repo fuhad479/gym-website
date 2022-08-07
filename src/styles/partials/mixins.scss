@@ -1,0 +1,23 @@
+@mixin buttonFill($padding, $borderRadius) {
+    background: $dark;
+    color: $light;
+    border: none;
+    padding: $padding;
+    border-radius: $borderRadius;
+    cursor: pointer;
+    box-shadow: 0 0.1156rem 0.1969rem rgba(49, 49, 49, 0.024),
+        0 0.5094rem 0.4075rem rgba(49, 49, 49, 0.039),
+        0 0.8125rem 1.25rem rgba(49, 49, 49, 0.05),
+        0 2.4075rem 1.5881rem rgba(49, 49, 49, 0.067),
+        0 4.0506rem 2.9281rem rgba(49, 49, 49, 0.075),
+        0 6.25rem 5rem rgba(49, 49, 49, 0.1);
+}
+
+@mixin buttonOutline($padding, $borderRadius) {
+    background: none;
+    color: $dark;
+    border: 0.0625rem solid $dark;
+    padding: $padding;
+    border-radius: $borderRadius;
+    cursor: pointer;
+}

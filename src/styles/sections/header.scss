@@ -1,0 +1,42 @@
+.header {
+    padding: 1.875rem 0;
+
+    .header-content {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        .navbar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            .logo {
+                display: block;
+                font-size: 1.5625rem;
+                color: #000;
+            }
+
+            .navigation {
+                display: flex;
+                gap: 50px;
+                margin-left: auto;
+            }
+
+            .header-actions {
+                display: flex;
+                margin-left: 100px;
+
+                .button {
+                    &:first-child {
+                        @include buttonOutline(1.125rem 2.8125rem, 0.3125rem);
+                        border: none;
+                    }
+
+                    &:last-child {
+                        @include buttonFill(1.125rem 2.8125rem, 0.3125rem);
+                    }
+                }
+            }
+        }
+    }
+}
