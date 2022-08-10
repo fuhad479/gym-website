@@ -1,0 +1,37 @@
+.partners {
+    .partners-content {
+        padding: 8.75rem 9.5625rem;
+        display: flex;
+        gap: .625rem;
+
+        .partners-left-content,
+        .partners-right-content {
+            width: 100%;
+        }
+
+        .partners-left-content {
+            .title {
+                font-family: 'CircularStd Medium', sans-serif;
+                font-size: 4.0625rem;
+                margin-bottom: 1.875rem;
+            }
+
+            .desc {
+                font-size: 1.25rem;
+            }
+        }
+
+        .partners-right-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+
+            img {
+                padding: 2rem 1.125rem;
+                background: #ffffff;
+                box-shadow: 0 1.25rem 3.125rem rgba(49, 49, 49, 0.05);
+                border-radius: .625rem;
+            }
+        }
+    }
+}
